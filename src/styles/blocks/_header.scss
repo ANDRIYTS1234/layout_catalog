@@ -4,8 +4,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: $padding-header-left;
+  padding-right: $padding-header-right;
 }
 
 .header__logo {

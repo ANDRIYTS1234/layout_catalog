@@ -10,7 +10,7 @@
   align-items: center;
   padding: 32px 16px 16px;
   letter-spacing: 0%;
-  transition: transform 300ms ease;
+  transition: transform $transition-duration ease;
 
   &:hover {
     transform: scale(1.2);
@@ -28,9 +28,11 @@
     width: $row-width;
     margin-bottom: 4px;
     letter-spacing: 0%;
+
+    transition: color $transition-duration ease;
   }
 
-  &__title .card:hover {
+  &:hover .card__title  {
     color: $hover-title-color;
   }
 
@@ -124,9 +126,9 @@
     justify-content: center;
 
     transition:
-      background-color 300ms ease,
-      color 300ms ease,
-      border 300ms ease;
+      background-color $transition-duration ease,
+      color $transition-duration ease,
+      border $transition-duration ease;
   }
   &__buy {
     width: 27px;
@@ -135,7 +137,7 @@
   &__button:hover {
     border: 1px solid #00acdc;
     box-sizing: border-box;
-    background-color: #fff;
-    color: #00acdc;
+    background-color: $button-hover-bgc;
+    color: $button-hover-color;
   }
 }

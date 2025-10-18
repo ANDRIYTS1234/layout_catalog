@@ -21,7 +21,7 @@
 }
 
 .nav__item {
-  background-color: white;
+  background-color: $nav-item-bgc;
 
   margin-right: 20px;
 }
@@ -47,5 +47,6 @@
 }
 
 .nav__link:hover {
-  color: #00acdc;
+  color: $nav-link-hover-color;
 }
+
